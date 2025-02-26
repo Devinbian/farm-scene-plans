@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>智慧微农场：引领教育创新，助力暑托班升级</title>
+    <style>
+        :root {
+            --primary-color: #0A2540;
+            --secondary-color: #1E88E5;
+            --accent-color: #00E5FF;
+            --text-color: #333;
+            --light-bg: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(
+                180deg,
+                #0A2540 0%,
+                #0F3A5D 50%,
+                #0A2540 100%
+            );
+            color: #E0E0E0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, rgba(30, 136, 229, 0.1), rgba(0, 229, 255, 0.05));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 60px 40px;
+            color: white;
+            border-radius: 30px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(120deg, #fff, var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .section {
+            background: rgba(14, 36, 57, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: var(--accent-color);
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .step-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-color: var(--accent-color);
+        }
+
+        .step-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .step-list {
+            list-style: none;
+        }
+
+        .step-list li {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .step-list li:before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        .warning {
+            background: rgba(255, 87, 34, 0.1);
+            border-left: 4px solid #FF5722;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .course-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .course-card h4 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .checklist {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .checklist-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .support-card {
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.1), rgba(30, 136, 229, 0.05));
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .support-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>智慧微农场：引领教育创新，助力暑托班升级</h1>
+            <p>政策契合，跨学科融合，科技赋能，灵活部署，打造优质教育</p>
+        </header>
+
+        <section class="section">
+            <h2>🚀 轻量化设计，快速上手</h2>
+            <div class="step-card">
+                <h3>极简安装流程</h3>
+                <ul class="step-list">
+                    <li>开箱放置：标配移动底座，灵活调整位置</li>
+                    <li>注水启动：一键自动补水，无需人工调节</li>
+                    <li>系统激活：扫码绑定，自动联网配置</li>
+                    <li>种植准备：即插即用的培植槽设计</li>
+                </ul>
+            </div>
+
+            <div class="step-card">
+                <h3>Lite版本优势</h3>
+                <ul class="step-list">
+                    <li>小巧便携：60×40×100cm，适合任意教室</li>
+                    <li>低功耗设计：总功率仅150W，日均2度电</li>
+                    <li>36个种植位：非常适合班级小组实验</li>
+                    <li>智能化设计：全自动化管理，无需专人维护</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📚 标准化课程体系</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <h4>基础课程包（12课时）</h4>
+                    <p>✓ 植物生长基础知识</p>
+                    <p>✓ 水培技术入门指导</p>
+                    <p>✓ 种植实践操作课</p>
+                </div>
+                <div class="course-card">
+                    <h4>STEAM课程包（24课时）</h4>
+                    <p>✓ 跨学科知识整合</p>
+                    <p>✓ 数据采集与分析</p>
+                    <p>✓ 创新实验设计</p>
+                </div>
+                <div class="course-card">
+                    <h4>特色课程包（选配）</h4>
+                    <p>✓ 劳动教育主题课</p>
+                    <p>✓ 科技创新专题</p>
+                    <p>✓ 农业科普系列</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>💡 成功案例分享</h2>
+            <div class="checklist">
+                <h3>苏州工业园区某小学</h3>
+                <div class="checklist-item">
+                    <span>✅</span>
+                    <span>3个班级12个小组同时开展种植实验</span>
+                </div>
+                <div class="checklist-item">
+                    <span>✅</span>
+                    <span>学生参与度提升90%，课堂活跃度显著提高</span>
+                </div>
+                <div class="checklist-item">
+                    <span>✅</span>
+                    <span>获评区级劳动教育示范课程</span>
+                </div>
+                <div class="checklist-item">
+                    <span>✅</span>
+                    <span>带动全校STEAM教育创新</span>
+                </div>
+            </div>
+
+            <div class="support-card">
+                <h3>🎁 限时优惠活动</h3>
+                <p>✨ 赠送价值3999元课程包</p>
+                <p>✨ 免费安装调试与培训</p>
+                <p>✨ 一年免费维护服务</p>
+                <div class="contact-info">
+                    📞 课程顾问：189-6211-6608（微信同号）
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
